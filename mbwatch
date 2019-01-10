@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+nodemon --watch mountebank --ext js,ejs --exec "mb $@"

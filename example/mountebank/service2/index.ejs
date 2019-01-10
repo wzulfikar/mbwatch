@@ -1,0 +1,11 @@
+{
+ "port": 8002,
+ "protocol": "http",
+ "name": "service2",
+ "recordRequests": true,
+ "stubs": [
+    <% include ../shared/stubs/cors-preflight.ejs %>,
+    <% include ../shared/stubs/ping.ejs %>,
+    <% include ../shared/stubs/page-not-found.ejs %>
+ ]
+}

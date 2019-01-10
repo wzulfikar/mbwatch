@@ -1,0 +1,21 @@
+{
+  "predicates": [
+    {
+      "matches": {
+        "method": "GET",
+        "path": "/hi"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "comment": "cors preflight response",
+      "is": {
+        "statusCode": "200",
+        "headers": {
+          <% include cors-headers %>
+        }
+      }
+    }
+  ]
+}
