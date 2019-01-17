@@ -14,6 +14,9 @@
         "headers": {
           <% include cors-headers %>
         }
+      },
+      "_behaviors": {
+        "decorate": "<%- stringify(filename, 'shared/behaviors/cors-match-allow-origin.js') %>"
       }
     }
   ]

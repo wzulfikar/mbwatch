@@ -1,0 +1,28 @@
+{
+  "comment": "mock successful signup",
+  "predicates": [
+    {
+      "matches": {
+        "path": "/rest/v1/signup",
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "username":"mockuser1",
+          "email": "mockuser1@luxtag.io",
+          "password": "password",
+          "password_confirmation": "password",
+          "avatar_url":".+"
+        }
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "inject": "<%- stringify(filename, 'service1/inject-response/demo-inject.js') %>"
+      }
+    }
+  ]
+}
